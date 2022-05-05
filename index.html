@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TrybeWarts</title>
 </head>
 <body>
+  <div class="wrapper">
+
+    <!-- HEADER -->
     <header class="header">
-        <img src="images/trybewarts-header-logo.svg" alt="">
+      <div class="header-container max-width">
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo">
+        <h1>Trybewarts</h1>
         <form action="get">
             <label for="">
                 <input type="email">
@@ -19,9 +24,24 @@
             </label>
             <button>login</button>
         </form>
+      </div>
     </header>
-    <main></main>
-    <h1>Teste 01</h1>
-    <script src="script.js"></script>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="main-container max-width">
+        <div class="img-container"><h2>Img</h2></div>
+        <div class="form-container"><h2>Forms</h2></div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container max-width">
+        <h2>Footer</h2>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
