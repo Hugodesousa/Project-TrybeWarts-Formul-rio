@@ -38,6 +38,7 @@
 
 /* ========== MAIN =========== */
 .main {
+  display: flex;
   flex-grow: 1;
 }
 
@@ -51,13 +52,70 @@
 
 .main-container .form-container {
   border: 1px solid gray;
-  flex-basis: 50%;
   order: -1;
 }
 
 .main-container .img-container {
   border: 1px solid gray;
-  flex-basis: 50%;
+}
+
+.main-container img {
+  height: 500px;
+}
+
+.form-trip {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  max-width: 800px;
+  margin: 32px auto;
+  background-color: rgb(246, 247, 248);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.form-row {
+  margin-bottom: 16px;
+}
+
+.form-trip #full-name , .form-trip #email {
+  width: 100%;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.form-trip input::placeholder {
+  color: gainsboro;
+}
+
+.form-trip fieldset {
+  padding: 8px;
+}
+
+.form-trip textarea::placeholder {
+  color: gainsboro;
+}
+
+.form-trip textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.form-trip #date {
+  padding: 8px;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: green;
+  color: aliceblue;
+  font-weight: 900;
+  border: 0;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
 /* ========== FOOTER ========= */

@@ -28,8 +28,81 @@
     <!-- Main -->
     <main class="main">
       <div class="main-container max-width">
-        <div class="img-container"><h2>Img</h2></div>
-        <div class="form-container"><h2>Forms</h2></div>
+        <!-- <div class="form-container"> -->
+          <form id="evaluation-form" class="form-trip" action="" method="GET">
+            <div class="form-row">
+              <label for="full-name">Nome Completo:</label>
+              <input required type="text" name="name" id="full-name" placeholder="Digite seu nome" minlength="10" maxlength="40">
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email:</label>
+              <input required type="email" name="email" id="email" placeholder="Digite seu e-mail" minlength="10" maxlength="50">
+            </div>
+
+            <div class="form-row">
+              <fieldset>
+                <legend>Destino preferido:</legend>
+
+                <label for="op1">
+                  <input type="radio" name="options" id="op1" value="city">
+                  Cidade
+                </label>
+
+                <label for="op2">
+                  <input type="radio" name="options" id="op2" value="countryside">
+                  Campo
+                </label>
+
+                <label for="op3">
+                  <input type="radio" name="options" id="op3" value="beach">
+                  Praia
+                </label>
+
+                <label for="op4">
+                  <input type="radio" name="options" id="op4" value="mountain">
+                  Montanhas
+                </label>
+              </fieldset>
+            </div>
+
+            <div class="form-row">
+              <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+              </p>
+              <textarea name="reasons" id="reasons" cols="22" rows="10" placeholder="Digite uma resposta" maxlength="500"></textarea>
+            </div>
+
+            <div class="form-row">
+              <p>Qual a melhor data para realizar sua viagem?</p>
+              <input type="date" name="date" id="date">
+            </div>
+
+            <div class="form-row">
+              <p>
+                <label for="agree-one">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+                <input type="checkbox" name="agree" id="agree-one">
+              </p>
+            </div>
+
+            <div class="form-row">
+              <p>
+                <label for="agree-two">Concordo que as imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+                <input type="checkbox" name="agree" id="agree-two">
+              </p>
+            </div>
+
+            <div class="form-row">
+              <button type="submit" id="send" class="btn" >Enviar</button>
+              <button type="reset" id="reset" class="btn" >Apagar</button>
+            </div>
+          </form>
+        <!-- </div> -->
+        <div class="img-container">
+          <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+        </div>
+
       </div>
     </main>
 
