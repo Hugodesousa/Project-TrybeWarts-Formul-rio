@@ -2,92 +2,97 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 
-  .wrapper {
+.wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
-  }
+}
 
-  .max-width {
+.max-width {
   width: 100%;
   max-width: 1366px;
   margin: auto;
-  }
+}
 
-  /* ========== HEADER ========== */
-  .header {
-    background-color: rgb(50, 167, 145);
-    color: white;
-    flex-basis: 80px;
-    display: flex;
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .trybewarts-login {
-    display: flex;
-  }
-  .trybewarts-header-logo {
-    width: 60px;
-  }
+/* ========== HEADER ========== */
+.header {
+  background-color: rgb(50, 167, 145);
+  color: white;
+  flex-basis: 80px;
+  display: flex;
+}
 
-  /* ========== MAIN =========== */
-  .main {
-    flex-grow: 1;
-  }
-  
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.trybewarts-header-logo {
+  width: 60px;
+}
+
+/* ========== MAIN =========== */
+.main {
+  flex-grow: 1;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.main-container .form-container {
+  border: 1px solid gray;
+  flex-basis: 50%;
+  order: -1;
+}
+
+.main-container .img-container {
+  border: 1px solid gray;
+  flex-basis: 50%;
+}
+
+/* ========== FOOTER ========= */
+.footer {
+  background-color: rgb(50, 167, 145);
+  color: white;
+  flex-basis: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* ========== PADDING ========== */
+.header , .main , .footer {
+  padding: 16px;
+}
+
+@media screen and ( max-width : 780px ) {
+
   .main-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    border: 1px solid gray;
+    display: block;
   }
-  
+
   .main-container .form-container {
-    border: 1px solid gray;
-    flex-basis: 50%;
-    order: -1;
+    width: 100%;
+    margin: auto;
   }
-  
+
   .main-container .img-container {
-    border: 1px solid gray;
-    flex-basis: 50%;
+    width: 100%;
+    margin: auto;
   }
-  
-  /* ========== FOOTER ========= */
-  .footer {
-    background-color: #2fc18c;
-    color: white;
-    flex-basis: 60px;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* ========== PADDING ========== */
-  .header, .main, .footer {
-    padding: 16px;
-  }
-  
-  @media screen and (max-width: 780px) {
-    .main-container {
-      display: block;
-    }
-    .main-container .form-container {
-      width: 100%;
-      margin: auto;
-    }
-    .main-container .img-container {
-      width: 100%;
-      margin: auto;
-    }
-  }
+}
