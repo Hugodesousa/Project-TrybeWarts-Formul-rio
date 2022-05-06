@@ -55,6 +55,12 @@
   order: -1;
 }
 
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .main-container .img-container {
   border: 1px solid gray;
 }
@@ -76,6 +82,7 @@
 
 .form-row {
   margin-bottom: 16px;
+  display: flex;
 }
 
 .form-trip #full-name , .form-trip #email {

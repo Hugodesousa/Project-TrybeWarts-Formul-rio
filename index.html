@@ -32,44 +32,47 @@
           <form id="evaluation-form" class="form-trip" action="" method="GET">
             <div class="form-row">
               <label for="input-name">
-              <input required type="text" name="input-name" id="input-name" placeholder="Nome" minlength="10" maxlength="40">
+                <input required type="text" name="input-name" id="input-name" placeholder="Nome" minlength="10" maxlength="40">
               </label>
               <label for="input-lastname">
                 <input required type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome" minlength="10" maxlength="40">
                 </label>
             </div>
-
             <div class="form-row">
               <label for="input-email">
-              <input required type="email" name="input-email" id="input-email" placeholder="Email" minlength="10" maxlength="50">
+                <input required type="email" name="input-email" id="input-email" placeholder="Email" minlength="10" maxlength="50">
               </label>
+              
+                <select name="house" id="house">
+                  <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                  <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                  <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                  <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                </select>  
             </div>
 
-            <div class="form-row">
-              <fieldset>
-                <legend>Destino preferido:</legend>
+            
+              <!-- <legend></legend> -->
+              <!-- <div class="form-row"> -->
+                <label for="family" id="label-family"> Qual sua família?
+              </label>
+                  <label for="Frontend">
+                    <input type="radio" name="family" value="Frontend" id="Frontend">Frontend
+                  </label>
+                  
+                  <label for="Backend">
+                    <input type="radio" name="family" value="Backend" id="Backend">Backend
+                  </label>
 
-                <label for="op1">
-                  <input type="radio" name="options" id="op1" value="city">
-                  Cidade
-                </label>
+                  <label for="FullStack">
+                    <input type="radio" name="family" value="FullStack" id="FullStack">FullStack
+                  </label>
 
-                <label for="op2">
-                  <input type="radio" name="options" id="op2" value="countryside">
-                  Campo
-                </label>
-
-                <label for="op3">
-                  <input type="radio" name="options" id="op3" value="beach">
-                  Praia
-                </label>
-
-                <label for="op4">
-                  <input type="radio" name="options" id="op4" value="mountain">
-                  Montanhas
-                </label>
-              </fieldset>
-            </div>
+                
+              <!-- </div> -->
+            
+              
+            
 
             <div class="form-row">
               <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
