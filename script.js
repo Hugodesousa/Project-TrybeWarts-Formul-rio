@@ -36,22 +36,22 @@ agreement.addEventListener('click', () => {
 
 toggleDisabled(true);
 
-const textarea = document.getElementById('textarea');
-const counter = document.getElementById('counter');
-// console.log(typeof +counter.innerText);
-// console.log(textarea);
+// const textarea = document.getElementById('textarea');
+// const counter = document.getElementById('counter');
+// // console.log(typeof +counter.innerText);
+// // console.log(textarea);
 
-const incrementCounter = Number(counter.innerText);
+// const incrementCounter = Number(counter.innerText);
 
-function characterCounter(value) {
-  value += value;
-  console.log(value);
-}
+// function characterCounter(value) {
+//   value += value;
+//   console.log(value);
+// }
 
-textarea.addEventListener('keyup', () => {
-  characterCounter(incrementCounter);
-});
+// textarea.addEventListener('keyup', () => {
+//   characterCounter(incrementCounter);
+// });
 
-submitBtn.addEventListener('click', () => {
-  console.log('Enviou!!!');
-});
+// submitBtn.addEventListener('click', () => {
+//   console.log('Enviou!!!');
+// });
