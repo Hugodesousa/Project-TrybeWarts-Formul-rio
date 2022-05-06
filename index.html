@@ -28,16 +28,21 @@
     <!-- Main -->
     <main class="main">
       <div class="main-container max-width">
-        <!-- <div class="form-container"> -->
+        <div class="form-container">
           <form id="evaluation-form" class="form-trip" action="" method="GET">
             <div class="form-row">
-              <label for="full-name">Nome Completo:</label>
-              <input required type="text" name="name" id="full-name" placeholder="Digite seu nome" minlength="10" maxlength="40">
+              <label for="input-name">
+              <input required type="text" name="input-name" id="input-name" placeholder="Nome" minlength="10" maxlength="40">
+              </label>
+              <label for="input-lastname">
+                <input required type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome" minlength="10" maxlength="40">
+                </label>
             </div>
 
             <div class="form-row">
-              <label for="email">Email:</label>
-              <input required type="email" name="email" id="email" placeholder="Digite seu e-mail" minlength="10" maxlength="50">
+              <label for="input-email">
+              <input required type="email" name="input-email" id="input-email" placeholder="Email" minlength="10" maxlength="50">
+              </label>
             </div>
 
             <div class="form-row">
@@ -98,7 +103,7 @@
               <button type="reset" id="reset" class="btn" >Apagar</button>
             </div>
           </form>
-        <!-- </div> -->
+        </div>
         <div class="img-container">
           <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
         </div>
