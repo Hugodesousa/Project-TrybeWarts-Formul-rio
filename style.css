@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: serif;
 }
 
 .wrapper {
@@ -13,7 +14,6 @@
 
 .max-width {
   width: 100%;
-  max-width: 1366px;
   margin: auto;
 }
 
@@ -25,11 +25,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1366px;
 }
 
 .trybewarts-login {
   display: flex;
+}
+
+.loginFlex {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#login {
+  background-color: white;
+  font-size: 15px;
+  width: 100px;
 }
 
 .trybewarts-header-logo {
@@ -60,6 +70,10 @@
   flex-direction: column;
 }
 
+.form-row-family {
+  display: flex;
+  flex-direction: column;
+}
 
 .main-container .img-container {
   border: 1px solid gray;

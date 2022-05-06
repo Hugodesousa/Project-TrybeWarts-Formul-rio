@@ -16,20 +16,26 @@
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login" action="get">
           <label for="email">
-              <input id= "email" type="email" name="email" placeholder="Email">
+              <input id= "email" class="loginFlex" type="email" name="email" placeholder="Email">
           </label>
           <label for="password">
-              <input type="password" id="password" name="password" placeholder="Senha">
+              <input type="password" id="password" class="loginFlex" name="password" placeholder="Senha">
           </label>
-          <button id="login">Entrar</button>
+          <button id="login" class="loginFlex">Entrar</button>
       </form>
     </header>
 
     <!-- Main -->
     <main class="main">
       <div class="main-container max-width">
+
+        <!-- Formulario -->
+
         <div class="form-container">
           <form id="evaluation-form" class="form-trip" action="" method="GET">
+
+            <!-- Nome -->
+
             <div class="form-row">
               <label for="input-name">
                 <input required type="text" name="input-name" id="input-name" placeholder="Nome" minlength="10" maxlength="40">
@@ -38,42 +44,40 @@
                 <input required type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome" minlength="10" maxlength="40">
                 </label>
             </div>
+
+            <!-- Email e seleção de casa -->
+
             <div class="form-row">
               <label for="input-email">
                 <input required type="email" name="input-email" id="input-email" placeholder="Email" minlength="10" maxlength="50">
               </label>
               
-                <select name="house" id="house">
-                  <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                  <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                  <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                  <option id="pytherina-house" value="Pytherina">Pytherina</option>
-                </select>  
+              <select name="house" id="house">
+                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                <option id="pytherina-house" value="Pytherina">Pytherina</option>
+              </select>  
             </div>
 
-            
-              <!-- <legend></legend> -->
-              <!-- <div class="form-row"> -->
-                <label for="family" id="label-family"> Qual sua família?
-              </label>
-                  <label for="Frontend">
-                    <input type="radio" name="family" value="Frontend" id="Frontend">Frontend
-                  </label>
+            <!-- Qual sua familia? -->
+
+            <div class="form-row-family">
+              <label for="family" id="label-family">Qual sua família?</label>
+                <label for="Frontend">
+                  <input type="radio" name="family" value="Frontend" id="Frontend">Frontend
+                </label>
                   
-                  <label for="Backend">
-                    <input type="radio" name="family" value="Backend" id="Backend">Backend
-                  </label>
+                <label for="Backend">
+                  <input type="radio" name="family" value="Backend" id="Backend">Backend
+                </label>
 
-                  <label for="FullStack">
-                    <input type="radio" name="family" value="FullStack" id="FullStack">FullStack
-                  </label>
-
-                
-              <!-- </div> -->
+                <label for="FullStack">
+                  <input type="radio" name="family" value="FullStack" id="FullStack">FullStack
+                </label> 
+            </div>
             
               
-            
-
             <div class="form-row">
               <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
               </p>
@@ -106,6 +110,9 @@
               <button type="reset" id="reset" class="btn" >Apagar</button>
             </div>
           </form>
+
+    <!-- Imagem -->
+
         </div>
         <div class="img-container">
           <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
