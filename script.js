@@ -2,12 +2,10 @@
 
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-
 const login = document.querySelector('#login');
 
 login.addEventListener('click', (event) => {
   event.preventDefault();
-
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
     alert('Olá, Tryber!');
   } else {
@@ -16,6 +14,8 @@ login.addEventListener('click', (event) => {
   console.log(email.value);
   console.log(password.value);
 });
+
+// Dasabilita botão enviar se o checkbox não estriver marcado.
 
 const agreement = document.getElementById('agreement');
 const submitBtn = document.getElementById('submit-btn');
@@ -36,6 +36,8 @@ agreement.addEventListener('click', () => {
 
 toggleDisabled(true);
 
+// Conta os caracteres disponiveis no text area.
+
 const textarea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 
@@ -46,6 +48,8 @@ textarea.addEventListener('keyup', () => {
 
   counter.innerText = value;
 });
+
+// enviar Fomulario.
 
 submitBtn.addEventListener('click', () => {
   console.log('Enviou!!!');
