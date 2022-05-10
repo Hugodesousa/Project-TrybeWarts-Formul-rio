@@ -51,6 +51,30 @@ textarea.addEventListener('keyup', () => {
 
 // enviar Fomulario.
 
+const inputFirstName = document.getElementById('input-name');
+const inputLastName = document.getElementById('input-lastname');
+const inputEmail = document.getElementById('input-email');
+const houseSelect = document.getElementById('house');
+const select = document.querySelectorAll('input[name="agree"]');
+const form = document.getElementById('evaluation-form');
+
 submitBtn.addEventListener('click', () => {
-  console.log('Enviou!!!');
+  const famylyCheckbox = document.querySelector('input[name="family"]:checked');
+  const radioChecked = document.querySelector('input[name="rate"]:checked');
+  const materias = [];
+  for (let index = 1; index < select.length; index += 1) {
+    if (select[index].checked) {
+      materias.push(select[index].value);
+    }
+  }
+
+  form.innerText = `
+    Nome: ${inputFirstName.value} ${inputLastName.value}
+    Email: ${inputEmail.value}
+    Casa: ${houseSelect.value}
+    Família: ${famylyCheckbox?.value}
+    Matérias: ${materias.toString().replace(/,/g, ', ')}
+    Avaliação: ${radioChecked?.value}
+    Observações: ${textarea.value}
+  `;
 });

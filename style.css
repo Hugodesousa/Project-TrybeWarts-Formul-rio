@@ -5,8 +5,8 @@
 }
 
 body {
-  background-image: url('https://www.lavenir.net/resizer/vAa6UZXYZUTRgrJ5jGKlTrCLy4k=/768x512/filters:quality(70):format(jpg):focal(355x245:365x235)/cloudfront-eu-central-1.images.arcpublishing.com/ipmgroup/VZM5EURBQVHZROS4KZPNAF62LU.jpg');
-  background-size: 100%;
+  background-image: url('./images/background.jpg');
+  background-size: cover;
 }
 
 .wrapper {
@@ -39,11 +39,6 @@ body {
   flex-basis: 80px;
 }
 
-.trybewarts-login {
-  display: flex;
-}
-
-
 #login {
   background-color: white;
   font-size: 15px;
@@ -73,6 +68,25 @@ body {
 
 .main-container img {
   height: 500px;
+}
+
+/* ==========  TRYBEWARTS LOGIN =========== */
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-login input {
+  padding: 8px 4px;
+  border: 0;
+  border-radius: 4px;
+  margin-right: 4px;
+  font-size: 14px;
+  color: 'aliceblue';
+}
+
+.trybewarts-login input::placeholder {
+  color: gainsboro;
 }
 
 /* ========== EVALUATION FORM =========== */
@@ -172,6 +186,8 @@ body {
   color: rgb(50, 167, 145);
   font-weight: 900;
   border: 0;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -201,7 +217,11 @@ body {
 
 @media screen and ( max-width : 780px ) {
 
-  .main-container {
+  .trybewarts-login input {
+    display: none;
+  }
+
+  /* .main-container {
     display: block;
   }
 
@@ -213,5 +233,5 @@ body {
   .main-container .img-container {
     width: 100%;
     margin: auto;
-  }
+  } */
 }
