@@ -72,9 +72,9 @@ submitBtn.addEventListener('click', () => {
     Nome: ${inputFirstName.value} ${inputLastName.value}
     Email: ${inputEmail.value}
     Casa: ${houseSelect.value}
-    Família: ${famylyCheckbox?.value}
+    Família: ${famylyCheckbox.value}
     Matérias: ${materias.toString().replace(/,/g, ', ')}
-    Avaliação: ${radioChecked?.value}
+    Avaliação: ${radioChecked.value}
     Observações: ${textarea.value}
   `;
 });
