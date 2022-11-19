@@ -14,6 +14,17 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 # Contexto
  
 Neste projeto foi desenvolvido uma página com HTML, CSS e JavaScript, a pagina tem um formulario. de inscrição da Escola de Magia de Trybewarts, em que as pessoas estudantes poderão enviar seus feedbacks sobre ela. O tema desse projeto é baseado na obra 'Harry Potter', de J. K. Rowling.
+
+O projeto foi realizado em dupla.
+
+### Hugo de Sousa Silva
+linkedin: https://www.linkedin.com/in/hugo-de-sousa-dev/
+
+### Marcelo da Silva Ataíde
+linkedin: https://www.linkedin.com/in/marcelo-da-silva-ata%C3%ADde-2b75b9235/
+
+GitHub: https://github.com/ataidemarcelo
+
 #
 
 ![img](./images/project.png)
